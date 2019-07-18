@@ -32,7 +32,6 @@ export const WorkContainer = styled(AboutContainer)`
     display: inline-block;
      padding: 100px;
      background: rgba(0, 0, 0, 0.6);
-     width: 90%
 `;
 
 
@@ -131,7 +130,6 @@ export const AboutHeader = styled.div`
      font-size: 50px;
       background-color: inherit;
       padding-top: 200px;
-      padding-left: 80px;
       font-weight: 900;
       text-align: center;
 `;

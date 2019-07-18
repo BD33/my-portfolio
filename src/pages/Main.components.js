@@ -221,6 +221,8 @@ export const CollegeIcon = styled.img`
     margin-left: auto;
     margin-right: auto;
     border-radius: 100px;
+    max-width:100%; 
+    height:auto; 
 `
 
 
@@ -231,6 +233,8 @@ export const CodeNinjaIcon = styled.img`
     border-radius: 100px;
     margin-top: 40px;
     margin-bottom: 60px;
+    max-width:100%; 
+    height:auto; 
 `
 
 
@@ -242,6 +246,7 @@ export const GivegameIcon = styled.img`
     margin-top: 40px;
     margin-bottom: 60px;
     height: 300px;
+   
 `
 
 export const SocialIcon = styled.img`

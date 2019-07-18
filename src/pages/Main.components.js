@@ -22,10 +22,30 @@ export const Container = styled.div`
      padding: 20px;
 
 `;
+
+export const AboutMeBody = styled.div`
+    padding-top:200px
+    padding: 80px;
+    background-color: inherit;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2;
+    padding-bottom: 200px;
+
+    `;
+
 export const AboutContainer = styled.div`
     display: inline-block;
      padding: 100px;
      background: rgba(0, 0, 0, 0.6);
+     opacity: 0;
+     &:hover  {
+      opacity: 1;
+      transition: opacity .5s ease-in;
+       transition: opacity 2s ease-out;
+      }
+     
+      
 `;
 
 export const WorkContainer = styled(AboutContainer)`
@@ -141,6 +161,9 @@ export const WorkHeader = styled(AboutHeader)`
 export const BigOverlay = styled.div`
      background: rgba(0, 0, 0, 0.6);
      border-radius: 100px;
+     opacity: 0;
+     transition: opacity 1s ease-in-out;
+
 `
 
 
@@ -162,6 +185,10 @@ export const  Education = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+       &:hover ${BigOverlay} {
+      opacity: 1;
+      
+    \`;
 
 `;
 export const SocialBar = styled.div`
@@ -181,17 +208,6 @@ export const SocialBar = styled.div`
 }
  }
     `;
-
-export const AboutMeBody = styled.div`
-    padding-top:200px
-    padding: 80px;
-    background-color: inherit;
-    text-align: center;
-    font-size: 30px;
-    line-height: 2;
-    padding-bottom: 200px;
-    `;
-
 
 
 export const JobDesc = styled.div`

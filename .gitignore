@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.jsgit remote add origin git@github.com:username/new_repo
 
 # testing
 /coverage

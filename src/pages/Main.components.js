@@ -124,7 +124,7 @@ export const Body = styled.div`
 `;
 
 export const Wrapper = styled.html`
-
+ overflow-x: hidden;
 `;
 
 export const AboutHeader = styled.div`

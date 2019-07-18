@@ -112,7 +112,7 @@ export default class Main extends Component {
                     <WorkContainer>
                         <WorkHeader>Work Experience</WorkHeader>
                         <AboutMeBody>
-                            <JobContainer>Code Ninjas 2018 - 2019
+                            <JobContainer>Code Ninjas 2018 - 2019 | <i>Code Sensei</i>
                                 <CodeNinjaIcon src={codeNinja}/>
                                 <JobDesc>
                                 •	Responsible for teaching children ages 7-14 on the core values of Computer Science using Java Script and Strach.
@@ -122,7 +122,7 @@ export default class Main extends Component {
                                 •	Developed curriculum based on Java Script and Strach based on student’s skill set.
                                 </JobDesc>
                             </JobContainer>
-                            <JobContainer>GiveGame 2019
+                            <JobContainer>GiveGame 2019 | <i>Software Engineer</i>
                                 <GivegameIcon src={givegame}/>
                                 <JobDesc>
                                     •	Responsible for contributing to brainstorming, designing, producing and implementing new components for an online mobile web app built in React.

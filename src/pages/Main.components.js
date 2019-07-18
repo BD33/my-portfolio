@@ -163,6 +163,7 @@ export const BigOverlay = styled.div`
      border-radius: 100px;
      opacity: 0;
      transition: opacity 1s ease-in-out;
+     padding: 20px;
 
 `
 
@@ -237,6 +238,7 @@ export const CollegeIcon = styled.img`
     border-radius: 100px;
     max-width:100%; 
     height:auto; 
+
 `
 
 

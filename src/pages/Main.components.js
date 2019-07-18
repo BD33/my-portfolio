@@ -116,7 +116,7 @@ export const MainDescription = styled.div`
 export const Body = styled.div`
    background-color: ${(props) => props.isClicked ? randomColor() : randomColor()} !important
     scroll-behavior: smooth;
-   position: absolute;
+  
    font-family: Helvetica;
    color: white;
    scroll-behavior: smooth !important

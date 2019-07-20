@@ -1,4 +1,4 @@
-import React , {Component} from 'react'; // import the script
+import React, {Component, Fragment} from 'react'; // import the script
 import {
     MainHeader,
     Body,
@@ -28,7 +28,8 @@ import {
     JobDesc,
     WorkContainer,
     GivegameIcon,
-    CodeNinjaIcon
+    CodeNinjaIcon,
+    WhatIUse
 } from './Main.components.js'
 
 import github from '../assests/github.png'
@@ -40,6 +41,12 @@ import headshot from '../assests/headshot.jpg'
 import grad from '../assests/grad.png'
 import codeNinja from '../assests/codeninjas.png'
 import givegame from '../assests/givegame.jpg'
+import html from '../assests/HTML.png'
+import css from '../assests/CSS3.png'
+import reactlogo from '../assests/reactlogo.png'
+import javaslogo from '../assests/javascriptlogo.png'
+import bootstrap from '../assests/bootstraplogo.png'
+
 
 export default class Main extends Component {
     state = {
@@ -73,7 +80,7 @@ export default class Main extends Component {
                     <ColorContainer onClick={this.handleClick}> Click Here to change the color! </ColorContainer>
                 </TopBar>
                 <Headshot src={headshot}/>
-                <MainHeader> Hello, I am Bill!</MainHeader>
+                <MainHeader> Hello, I'm Bill!</MainHeader>
                 <MainDescription>Student | FullStack Devloper | Meme enthusiast | Blogger </MainDescription>
                 <SocialBar>
                     <a href='http://www.twitter.com/billydeniro3' target= '_blank'>
@@ -97,8 +104,28 @@ export default class Main extends Component {
 
                     I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way.
 
-                     Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.
-                </AboutMeBody >
+
+                    Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.
+                    <WhatIUse>What do I use?</WhatIUse>
+                        I have experience with the following tools & technologies:
+                    <SocialBar>
+                        <a href='http://www.twitter.com/billydeniro3' target= '_blank'>
+                            <SocialIcon src={reactlogo}/>
+                        </a>
+                        <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank'>
+                            <SocialIcon src={html}/>
+                        </a>
+                        <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                            <SocialIcon src={css}/>
+                        </a>
+                        <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                            <SocialIcon src={javaslogo}/>
+                        </a>
+                        <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                            <SocialIcon src={bootstrap}/>
+                        </a>
+                    </SocialBar>
+                    </AboutMeBody >
                 </AboutContainer>
                 <Education>
                     <BigOverlay>

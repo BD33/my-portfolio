@@ -30,7 +30,6 @@ export const AboutMeBody = styled.div`
     text-align: center;
     font-size: 30px;
     line-height: 2;
-    padding-bottom: 200px;
 
     `;
 
@@ -154,9 +153,12 @@ export const AboutHeader = styled.div`
       text-align: center;
 `;
 
+export const WhatIUse = styled(AboutHeader)`
+      background-color: transparent; !important
+`
 export const WorkHeader = styled(AboutHeader)`
    padding-left: 0px;
-`
+`;
 
 export const BigOverlay = styled.div`
      background: rgba(0, 0, 0, 0.6);
@@ -164,8 +166,7 @@ export const BigOverlay = styled.div`
      opacity: 0;
      transition: opacity 1s ease-in-out;
      padding: 20px;
-
-`
+`;
 
 
 export const EdHeader = styled(AboutHeader)`
@@ -176,7 +177,7 @@ export const EdHeader = styled(AboutHeader)`
     padding-left: 0px;
     background: none;
     font-weight: 100;
-`
+`;
 
 export const  Education = styled.div`
     padding: 250px
@@ -206,10 +207,8 @@ export const SocialBar = styled.div`
       to {
         width: 100%;
       }
-}
- }
+     }
     `;
-
 
 export const JobDesc = styled.div`
     padding-top:200px
@@ -222,8 +221,6 @@ export const JobDesc = styled.div`
     
    opacity: 0;
    transition: opacity .5s ease-in-out;
-
-    
     `;
 
 export const EdBody = styled(AboutMeBody)`
@@ -237,9 +234,8 @@ export const CollegeIcon = styled.img`
     margin-right: auto;
     border-radius: 100px;
     max-width:100%; 
-    height:auto; 
-
-`
+    height: 300px; 
+`;
 
 
 export const CodeNinjaIcon = styled.img`

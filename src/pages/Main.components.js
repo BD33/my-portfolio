@@ -187,8 +187,11 @@ export const  Education = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  animation-name: slideleft;
        &:hover ${BigOverlay} {
       opacity: 1;
+      tr
+    }
       
     \`;
 

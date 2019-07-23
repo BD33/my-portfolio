@@ -262,7 +262,7 @@ export const JobDesc = styled.div`
         font-size: 20px;
         text-align: left;
         padding: 0px;
-     
+        margin-bottom: 100px; !important
      }
     `;
 

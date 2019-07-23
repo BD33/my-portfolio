@@ -6,6 +6,10 @@ var randomColor = require('randomcolor');
 const color1 = randomColor();
 const color2 = randomColor();
 
+//xs : 320px
+//sm : 760px
+//md: 992px
+//lg: 1200px
 
 export const AboutMe = styled.div`
    position: relative;
@@ -15,6 +19,10 @@ export const AboutMe = styled.div`
     transition: transform .5s;
     &:hover {
   transform: scale(1.1);
+    }
+  @media only screen and (max-width: 992px) {
+        display: none;
+  }
 `;
 
 export const Container = styled.div`
@@ -30,6 +38,10 @@ export const AboutMeBody = styled.div`
     text-align: center;
     font-size: 30px;
     line-height: 2;
+      @media only screen and (max-width: 760px) {
+       font-size: 20px; padding: 20px;
+        }
+     
 
     `;
 
@@ -43,6 +55,11 @@ export const AboutContainer = styled.div`
       transition: opacity .5s ease-in;
        transition: opacity 2s ease-out;
       }
+      @media only screen and (max-width: 760px) {
+        opacity: 1;
+        padding: 0px;
+        display: block;
+        }
      
       
 `;
@@ -108,8 +125,10 @@ export const MainHeader = styled.div`
     transform: translateY(0);
     opacity: 1;
   }
-
  }
+   @media only screen and (max-width: 992px) {
+        font-size: 40px;
+  }
 `;
 
 
@@ -128,7 +147,10 @@ export const MainDescription = styled.div`
         width: 100%;
       }
     }
- }
+ 
+       @media only screen and (max-width: 992px) {
+        font-size: 25px;
+  }
 `;
 
 export const Body = styled.div`
@@ -166,6 +188,11 @@ export const BigOverlay = styled.div`
      opacity: 0;
      transition: opacity 1s ease-in-out;
      padding: 20px;
+        @media only screen and (max-width: 760px) {
+        opacity: 1;
+        border-radius: 0px;
+        }
+    \`;
 `;
 
 
@@ -176,7 +203,7 @@ export const EdHeader = styled(AboutHeader)`
     margin-bottom: 0px;
     padding-left: 0px;
     background: none;
-    font-weight: 100;
+     
 `;
 
 export const  Education = styled.div`
@@ -190,9 +217,12 @@ export const  Education = styled.div`
   animation-name: slideleft;
        &:hover ${BigOverlay} {
       opacity: 1;
-      tr
     }
-      
+      @media only screen and (max-width: 760px) {
+        opacity: 1;
+        padding: 0px;
+        display: block;
+        }
     \`;
 
 `;
@@ -202,7 +232,6 @@ export const SocialBar = styled.div`
     align-content: center;
     animation-duration: 4s;
     animation-name: slideover;
-  
       @keyframes slideover {
       from {
         width: 0%; 
@@ -224,6 +253,13 @@ export const JobDesc = styled.div`
     
    opacity: 0;
    transition: opacity .5s ease-in-out;
+      @media only screen and (max-width: 760px) {
+        opacity: 1;
+        font-size: 20px;
+        text-align: left;
+        padding: 0px;
+     
+     }
     `;
 
 export const EdBody = styled(AboutMeBody)`
@@ -238,6 +274,9 @@ export const CollegeIcon = styled.img`
     border-radius: 100px;
     max-width:100%; 
     height: 300px; 
+     @media only screen and (max-width: 760px) {
+     height: 200px;
+     }
 `;
 
 
@@ -250,6 +289,7 @@ export const CodeNinjaIcon = styled.img`
     margin-bottom: 60px;
     max-width:100%; 
     height:auto; 
+    
 `
 
 
@@ -261,6 +301,9 @@ export const GivegameIcon = styled.img`
     margin-top: 40px;
     margin-bottom: 60px;
     height: 300px;
+     @media only screen and (max-width: 760px) {
+     height: 150px;
+     
    
 `
 
@@ -275,6 +318,11 @@ export const SocialIcon = styled.img`
     -webkit-transform: translateY(-25px);
     transform: translateY(-25px)  scale(1.3);
     }
+          @media only screen and (max-width: 760px) {
+             height: 40px;
+             width: 40px;
+             }
+
 `;
 
 export const GithubIcon = styled.img`
@@ -288,6 +336,10 @@ export const GithubIcon = styled.img`
     -webkit-transform: translateY(-25px);
     transform: translateY(-25px)  scale(1.3);
     }
+    @media only screen and (max-width: 760px) {
+             height: 30px;
+             width: 30px;
+             }
 `;
 
 export const GradIcon = styled.img`
@@ -323,5 +375,4 @@ export const JobContainer = styled.div`
   
       &:hover ${JobDesc} {
       opacity: 1;
-      
     `;

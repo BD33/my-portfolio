@@ -74,7 +74,7 @@ export default class Main extends Component {
     render() {
         return (
             <Wrapper>
-            <Body isClicked={this.state.isClicked}>
+            <Body>
                 <TopBar>
                     <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
                     <ColorContainer onClick={this.handleClick}> Click Here to change the color! </ColorContainer>
@@ -139,6 +139,9 @@ export default class Main extends Component {
                     <WorkContainer>
                         <WorkHeader>Work Experience</WorkHeader>
                         <AboutMeBody>
+{/*
+                            Make its own Component
+*/}
                             <JobContainer>Code Ninjas 2018 - 2019 | <i>Code Sensei</i>
                                 <CodeNinjaIcon src={codeNinja}/>
                                 <JobDesc>

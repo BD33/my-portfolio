@@ -40,6 +40,7 @@ export const AboutMeBody = styled.div`
     line-height: 2;
       @media only screen and (max-width: 760px) {
        font-size: 20px; padding: 20px;
+       background-color: transparent;
         }
      
 
@@ -173,6 +174,9 @@ export const AboutHeader = styled.div`
       padding-top: 200px;
       font-weight: 900;
       text-align: center;
+       @media only screen and (max-width: 760px) {
+       background-color: transparent;
+       }
 `;
 
 export const WhatIUse = styled(AboutHeader)`

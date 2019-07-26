@@ -1,4 +1,7 @@
-import React, {Component, Fragment} from 'react'; // import the script
+//Libraries
+import React, {Component} from 'react'; // import the script
+
+//Style Components
 import {
     MainHeader,
     Body,
@@ -27,6 +30,7 @@ import {
     WhatIUse
 } from './Main.components.js'
 
+//Images
 import github from '../assests/github.png'
 import instagram from '../assests/instagram.png'
 import linkin from '../assests/linkedin.png'
@@ -42,6 +46,7 @@ import reactlogo from '../assests/reactlogo.png'
 import javaslogo from '../assests/javascriptlogo.png'
 import bootstrap from '../assests/bootstraplogo.png'
 
+//Components
 import Jobs from '../components/Jobs'
 
 
@@ -80,16 +85,16 @@ export default class Main extends Component {
                     <MainHeader> Hello, I'm Bill!</MainHeader>
                     <MainDescription>Student | FullStack Devloper | Meme enthusiast | Sports Guy </MainDescription>
                     <SocialBar>
-                        <a href='http://www.twitter.com/billydeniro3' target= '_blank'>
+                        <a href='http://www.twitter.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
                             <SocialIcon src={twitter}/>
                         </a>
-                        <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank'>
+                        <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank' rel="noopener noreferrer">
                             <SocialIcon src={linkin}/>
                         </a>
-                        <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                        <a href='http://www.instagram.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
                             <SocialIcon src={instagram}/>
                         </a>
-                        <a href='http://www.github.com/bd33' target= '_blank'>
+                        <a href='http://www.github.com/bd33' target= '_blank' rel="noopener noreferrer">
                             <GithubIcon src={github}/>
                         </a>
                     </SocialBar>
@@ -103,19 +108,19 @@ export default class Main extends Component {
                             <WhatIUse>What do I use?</WhatIUse>
                             I have experience with the following tools & technologies:
                             <SocialBar>
-                                <a href='http://www.twitter.com/billydeniro3' target= '_blank'>
+                                <a href='https://reactjs.org/' target= '_blank'>
                                     <SocialIcon src={reactlogo}/>
                                 </a>
-                                <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank'>
+                                <a href='https://www.w3schools.com/html/' target= '_blank'>
                                     <SocialIcon src={html}/>
                                 </a>
-                                <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                                <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target= '_blank'>
                                     <SocialIcon src={css}/>
                                 </a>
-                                <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                                <a href='https://www.javascript.com/' target= '_blank'>
                                     <SocialIcon src={javaslogo}/>
                                 </a>
-                                <a href='http://www.instagram.com/billydeniro3' target= '_blank'>
+                                <a href='https://getbootstrap.com/' target= '_blank'>
                                     <SocialIcon src={bootstrap}/>
                                 </a>
                             </SocialBar>

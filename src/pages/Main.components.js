@@ -1,10 +1,11 @@
-import React from 'react';
+//Libraries
 import styled from 'styled-components'; // import the script
-import uniWall from '../assests/UniWall.jpg'
-var randomColor = require('randomcolor');
 
-const color1 = randomColor();
-const color2 = randomColor();
+//Images
+import uniWall from '../assests/UniWall.jpg'
+
+//RandomColor for background
+var randomColor = require('randomcolor');
 
 //xs : 320px
 //sm : 760px
@@ -28,7 +29,6 @@ export const AboutMe = styled.div`
 export const Container = styled.div`
     display: inline-block;
      padding: 20px;
-
 `;
 
 export const AboutMeBody = styled.div`
@@ -42,8 +42,6 @@ export const AboutMeBody = styled.div`
        font-size: 20px; padding: 20px;
        background-color: transparent;
         }
-     
-
     `;
 
 export const AboutContainer = styled.div`
@@ -60,9 +58,7 @@ export const AboutContainer = styled.div`
         opacity: 1;
         padding: 0px;
         display: block;
-        }
-     
-      
+        }  
 `;
 
 export const WorkContainer = styled(AboutContainer)`
@@ -70,8 +66,6 @@ export const WorkContainer = styled(AboutContainer)`
      padding: 100px;
      background: rgba(0, 0, 0, 0.6);
 `;
-
-
 
 export const ColorContainer = styled.button`
     position: relative;   
@@ -103,7 +97,6 @@ export const TopBar = styled.div`
     transform: translateY(0%);
     opacity: 1;
   }
-
  }
 `;
 
@@ -113,7 +106,6 @@ export const MainHeader = styled.div`
    text-align: center;
    margin-top: 50px;
    margin-bottom: 50px;
-   
   animation-duration: 3s;
     animation-name: slideDown;
   
@@ -131,7 +123,6 @@ export const MainHeader = styled.div`
         font-size: 40px;
   }
 `;
-
 
 export const MainDescription = styled.div`
    position: relative;
@@ -199,15 +190,13 @@ export const BigOverlay = styled.div`
     \`;
 `;
 
-
 export const EdHeader = styled(AboutHeader)`
     padding-top: 0px;
     text-align: center;
     padding-top: 90px;
     margin-bottom: 0px;
     padding-left: 0px;
-    background: none;
-     
+    background: none;    
 `;
 
 export const  Education = styled.div`
@@ -228,7 +217,6 @@ export const  Education = styled.div`
         display: block;
         }
     \`;
-
 `;
 export const SocialBar = styled.div`
     display: flex;
@@ -303,8 +291,7 @@ export const GradIcon = styled.img`
        display: block;
        margin-left: auto;
        margin-right: auto;
-`
-
+`;
 
 export const Headshot = styled.img`
     border-radius: 100px;

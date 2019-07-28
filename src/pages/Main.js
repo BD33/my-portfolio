@@ -27,6 +27,8 @@ import {
     ToolIcon,
     MacScreens,
     ArrowIcon,
+    PhoneScreens,
+    DisplayBox,
 } from './Main.components.js'
 
 //Images
@@ -48,6 +50,10 @@ import macscreen from '../assests/GiveGameMac.png'
 import macscreen2 from '../assests/GiveGameMac2.png'
 import macscreen3 from '../assests/GiveGameMac3.png'
 import arrowDown from '../assests/white-down-arrow-png-2.png'
+import iphone from '../assests/GiveGameIphone.png'
+import iphone2 from '../assests/GiveGameIphone2.png'
+import iphone3 from '../assests/GiveGameIphone3.png'
+
 
 //Components
 import Jobs from '../components/Jobs'
@@ -151,9 +157,18 @@ export default class Main extends Component {
                                 />
                                 <div>GiveGame Portfolio</div>
                                 <ArrowIcon src={arrowDown}/>
+                                <DisplayBox>
                                 <MacScreens src={macscreen}/>
+                                <PhoneScreens src={iphone3}/>
+                                 </DisplayBox>
+                                <DisplayBox>
                                 <MacScreens src={macscreen2}/>
+                                <PhoneScreens src={iphone2}/>
+                                </DisplayBox>
+                                <DisplayBox>
                                 <MacScreens src={macscreen3}/>
+                                <PhoneScreens src={iphone}/>
+                                </DisplayBox>
                             </GeneralBody >
                         </WorkContainer>
                 </Body>

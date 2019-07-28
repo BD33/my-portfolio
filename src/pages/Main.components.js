@@ -214,6 +214,13 @@ export const SocialBar = styled.div`
          }
     `;
 
+export const DisplayBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+`;
+
 export const EdBody = styled(GeneralBody)`
     padding-bottom: 0px;
     background: none;
@@ -272,6 +279,9 @@ export const ArrowIcon = styled.img`
 `;
 
 export const MacScreens = styled.img`
+`;
+export const PhoneScreens = styled.img`
+    height: 600px;
 `;
 
 export const GithubIcon = styled.img`

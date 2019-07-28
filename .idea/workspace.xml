@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6df682fe-2fae-47eb-9ea6-87bc0994d6e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assests/San-Francisco-4K.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assests/white-down-arrow-png-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameIphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameIphone2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameIphone3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs.components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs.components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
     </list>
@@ -23,24 +20,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            <state relative-caret-position="2720">
+              <caret line="163" column="40" selection-start-line="163" selection-start-column="40" selection-end-line="163" selection-end-column="40" />
               <folding>
                 <element signature="e#93#564#0" expanded="true" />
-                <element signature="e#591#633#0" expanded="true" />
+                <element signature="e#519#561#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/Main.components.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="2164">
+              <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
               <folding>
                 <element signature="e#83#127#0" expanded="true" />
               </folding>
@@ -80,8 +77,8 @@
       <find>aboutmebod</find>
       <find>about</find>
       <find>workhe</find>
-      <find>container</find>
       <find>abo</find>
+      <find>container</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,14 +93,14 @@
         <option value="$PROJECT_DIR$/src/components/Jobs.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Jobs.components.js" />
-        <option value="$PROJECT_DIR$/src/pages/Main.components.js" />
         <option value="$PROJECT_DIR$/src/pages/Main.js" />
+        <option value="$PROJECT_DIR$/src/pages/Main.components.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="10" />
+    <option name="x" value="691" />
+    <option name="y" value="14" />
     <option name="width" value="1548" />
     <option name="height" value="1003" />
   </component>
@@ -186,22 +183,22 @@
       <workItem from="1563822305403" duration="4254000" />
       <workItem from="1563889041957" duration="1437000" />
       <workItem from="1564072482925" duration="9597000" />
-      <workItem from="1564270308461" duration="9429000" />
+      <workItem from="1564270308461" duration="11186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73629000" />
+    <option name="totallyTimeSpent" value="75386000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="10" width="1548" height="1003" extended-state="1" />
+    <frame x="691" y="14" width="1548" height="1003" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17814569" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17814569" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.18735632" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.18735632" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -306,23 +303,23 @@
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Main.components.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="2720">
+          <caret line="163" column="40" selection-start-line="163" selection-start-column="40" selection-end-line="163" selection-end-column="40" />
           <folding>
-            <element signature="e#83#127#0" expanded="true" />
+            <element signature="e#93#564#0" expanded="true" />
+            <element signature="e#519#561#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Main.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Main.components.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        <state relative-caret-position="2164">
+          <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
           <folding>
-            <element signature="e#93#564#0" expanded="true" />
-            <element signature="e#591#633#0" expanded="true" />
+            <element signature="e#83#127#0" expanded="true" />
           </folding>
         </state>
       </provider>

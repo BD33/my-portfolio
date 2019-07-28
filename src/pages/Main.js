@@ -5,29 +5,28 @@ import React, {Component} from 'react'; // import the script
 import {
     MainHeader,
     Body,
-    TopBar,
     AboutMe,
-    ColorContainer,
     MainDescription,
     SocialBar,
     SocialIcon,
     GithubIcon,
-    AboutMeBody,
-    Wrapper,
-    AboutHeader,
+    GeneralBody,
+    GeneralHeader,
     Headshot,
     Education,
     EdHeader,
     EdBody,
     CollegeIcon,
-    Container,
     BigOverlay,
     GradIcon,
     AboutContainer,
-    WorkExp,
-    WorkHeader,
     WorkContainer,
-    WhatIUse
+    WhatIUse,
+    TopContainer,
+    TopOverlay,
+    ToolIcon,
+    MacScreens,
+    ArrowIcon,
 } from './Main.components.js'
 
 //Images
@@ -45,42 +44,26 @@ import css from '../assests/CSS3.png'
 import reactlogo from '../assests/reactlogo.png'
 import javaslogo from '../assests/javascriptlogo.png'
 import bootstrap from '../assests/bootstraplogo.png'
+import macscreen from '../assests/GiveGameMac.png'
+import macscreen2 from '../assests/GiveGameMac2.png'
+import macscreen3 from '../assests/GiveGameMac3.png'
+import arrowDown from '../assests/white-down-arrow-png-2.png'
 
 //Components
 import Jobs from '../components/Jobs'
 
-
 export default class Main extends Component {
-    state = {
-        isClicked: true,
-    }
-
-    handleClick = () => {
-        if(this.state.isClicked === true) {
-            this.setState({
-                isClicked: false,
-            })
-        }
-        else {
-            this.setState({
-                isClicked: true,
-            })
-        }
-    }
 
     handleScroll = () =>{
         window.scroll({ top: 1050, left: 0, behavior: 'smooth' });
     }
 
-
     render() {
         return (
-            <Wrapper>
                 <Body>
-                    <TopBar>
-                        <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
-                        <ColorContainer onClick={this.handleClick}> Click Here to change the color! </ColorContainer>
-                    </TopBar>
+                    <TopContainer>
+                        <TopOverlay>
+                            <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
                     <Headshot src={headshot}/>
                     <MainHeader> Hello, I'm Bill!</MainHeader>
                     <MainDescription>Student | FullStack Devloper | Meme enthusiast | Sports Guy </MainDescription>
@@ -99,8 +82,8 @@ export default class Main extends Component {
                         </a>
                     </SocialBar>
                     <AboutContainer>
-                        <AboutHeader>ABOUT</AboutHeader>
-                        <AboutMeBody id="about" data-aos="flip-left">
+                        <GeneralHeader>ABOUT</GeneralHeader>
+                        <GeneralBody>
                             I like JavaScript and everything web.
                             When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving.
                             I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way.
@@ -109,37 +92,38 @@ export default class Main extends Component {
                             I have experience with the following tools & technologies:
                             <SocialBar>
                                 <a href='https://reactjs.org/' target= '_blank'>
-                                    <SocialIcon src={reactlogo}/>
+                                    <ToolIcon src={reactlogo}/>
                                 </a>
                                 <a href='https://www.w3schools.com/html/' target= '_blank'>
-                                    <SocialIcon src={html}/>
+                                    <ToolIcon src={html}/>
                                 </a>
                                 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target= '_blank'>
-                                    <SocialIcon src={css}/>
+                                    <ToolIcon src={css}/>
                                 </a>
                                 <a href='https://www.javascript.com/' target= '_blank'>
-                                    <SocialIcon src={javaslogo}/>
+                                    <ToolIcon src={javaslogo}/>
                                 </a>
                                 <a href='https://getbootstrap.com/' target= '_blank'>
-                                    <SocialIcon src={bootstrap}/>
+                                    <ToolIcon src={bootstrap}/>
                                 </a>
                             </SocialBar>
-                        </AboutMeBody >
+                        </GeneralBody >
                     </AboutContainer>
+                        </TopOverlay>
+                    </TopContainer>
                     <Education>
                         <BigOverlay>
                             <EdHeader>
-                                <Container>Education</Container>
+                                Education
                             </EdHeader>
                             <GradIcon src={grad}/>
                             <CollegeIcon src={TheOhioState}/>
                             <EdBody> Currently pursuing a degree in Computer Science Engineering from The Ohio State University. </EdBody>
                         </BigOverlay>
                     </Education>
-                    <WorkExp>
                         <WorkContainer>
-                            <WorkHeader>Work Experience</WorkHeader>
-                            <AboutMeBody>
+                            <GeneralHeader>Work Experience</GeneralHeader>
+                            <GeneralBody>
                                 <Jobs jobName={
                                     <div>Code Ninjas 2018 - 2019 | <i>Code Sensei</i> </div>
                                 }
@@ -165,11 +149,14 @@ export default class Main extends Component {
                                           </div>
                                       }
                                 />
-                            </AboutMeBody >
+                                <div>GiveGame Portfolio</div>
+                                <ArrowIcon src={arrowDown}/>
+                                <MacScreens src={macscreen}/>
+                                <MacScreens src={macscreen2}/>
+                                <MacScreens src={macscreen3}/>
+                            </GeneralBody >
                         </WorkContainer>
-                    </WorkExp>
                 </Body>
-            </Wrapper>
         );
     }
 }

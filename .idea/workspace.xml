@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6df682fe-2fae-47eb-9ea6-87bc0994d6e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/GiveGameMac3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/San-Francisco-4K.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assests/white-down-arrow-png-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Jobs.components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs.components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +26,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="151" column="47" lean-forward="true" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding>
-                <element signature="e#61#483#0" expanded="true" />
-                <element signature="e#526#568#0" expanded="true" />
+                <element signature="e#93#564#0" expanded="true" />
+                <element signature="e#591#633#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,8 +39,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Main.components.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="663">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#83#127#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,27 +52,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-f</find>
-      <find>contain</find>
-      <find>in-</find>
-      <find>in-l</find>
-      <find>inl</find>
-      <find>ed</find>
-      <find>edu</find>
-      <find>edh</find>
-      <find>rgb</find>
-      <find>conta</find>
-      <find>aboutc</find>
-      <find>abouth</find>
-      <find>aboutheader</find>
-      <find>aboutcon</find>
-      <find>abs</find>
       <find>inL</find>
       <find>block</find>
       <find>opacity</find>
       <find>aboutmeb</find>
       <find>opac</find>
-      <find>hover</find>
       <find>big</find>
       <find>;</find>
       <find>styleC</find>
@@ -71,6 +66,22 @@
       <find>font-size: 20px</find>
       <find>job</find>
       <find>color1</find>
+      <find>backgr</find>
+      <find>background-im</find>
+      <find>background</find>
+      <find>san</find>
+      <find>uni</find>
+      <find>soci</find>
+      <find>soc</find>
+      <find>social</find>
+      <find>hover</find>
+      <find>anim</find>
+      <find>Desc</find>
+      <find>aboutmebod</find>
+      <find>about</find>
+      <find>workhe</find>
+      <find>container</find>
+      <find>abo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,18 +94,18 @@
         <option value="$PROJECT_DIR$/src/pages/Main.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/Jobs.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Jobs.components.js" />
         <option value="$PROJECT_DIR$/src/pages/Main.components.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/pages/Main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="386" />
-    <option name="y" value="5" />
+    <option name="x" value="160" />
+    <option name="y" value="10" />
     <option name="width" value="1548" />
-    <option name="height" value="1004" />
+    <option name="height" value="1003" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,22 +185,23 @@
       <workItem from="1563822063602" duration="105000" />
       <workItem from="1563822305403" duration="4254000" />
       <workItem from="1563889041957" duration="1437000" />
-      <workItem from="1564072482925" duration="7938000" />
+      <workItem from="1564072482925" duration="9597000" />
+      <workItem from="1564270308461" duration="9429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62541000" />
+    <option name="totallyTimeSpent" value="73629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="386" y="5" width="1548" height="1004" extended-state="0" />
+    <frame x="160" y="10" width="1548" height="1003" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17814569" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17814569" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.18714121" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.18735632" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -207,9 +219,9 @@
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3175729" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17814569" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2112676" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.18735632" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -245,34 +257,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/assests/UniWall.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Jobs.components.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="38" selection-start-line="38" selection-end-line="42" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Jobs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="493">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="e#1#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -284,20 +293,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Main.components.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#83#127#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="151" column="47" lean-forward="true" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
-            <element signature="e#61#483#0" expanded="true" />
-            <element signature="e#526#568#0" expanded="true" />
+            <element signature="e#93#564#0" expanded="true" />
+            <element signature="e#591#633#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,9 +3,7 @@ import styled from 'styled-components'; // import the script
 
 //Images
 import uniWall from '../assests/UniWall.jpg'
-
-//RandomColor for background
-var randomColor = require('randomcolor');
+import sanfran from '../assests/San-Francisco-4K.jpg'
 
 //xs : 320px
 //sm : 760px
@@ -15,23 +13,32 @@ var randomColor = require('randomcolor');
 export const AboutMe = styled.div`
    position: relative;
    font-size: 40px;
-   text-align: right;
-   width: auto;
-    transition: transform .5s;
+   text-align: left;
+   width: 200px;
+   transition: transform .5s;
     &:hover {
-  transform: scale(1.1);
-    }
-  @media only screen and (max-width: 992px) {
+         transform: scale(1.2);
+         }
+         
+    @media only screen and (max-width: 992px) {
         display: none;
-  }
+     }
+    animation-duration: 2s;
+    animation-name: slideUp;
+    padding: 50px;
+      @keyframes slideUp{
+             from {
+          transform: translateY(100%);
+         opacity: 0;
+        }
+         to {
+           transform: translateY(0%);
+         opacity: 1;
+        }
+         }
 `;
 
-export const Container = styled.div`
-    display: inline-block;
-     padding: 20px;
-`;
-
-export const AboutMeBody = styled.div`
+export const GeneralBody = styled.div`
     padding-top:200px
     padding: 80px;
     background-color: inherit;
@@ -67,38 +74,6 @@ export const WorkContainer = styled(AboutContainer)`
      background: rgba(0, 0, 0, 0.6);
 `;
 
-export const ColorContainer = styled.button`
-    position: relative;   
-    padding: 10px;
-    font-size: 20px;
-    background-color: inherit;
-    color: white;
-    transition: transform .5s;
-    border-radius: 15px;
-    &:hover {
-  transform: scale(1.1);
-  }
-`;
-
-export const TopBar = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    animation-duration: 2s;
-    animation-name: slideUp;
-    padding: 50px;
-  @keyframes slideUp{
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
- }
-`;
 
 export const MainHeader = styled.div`
    position: relative;
@@ -106,19 +81,18 @@ export const MainHeader = styled.div`
    text-align: center;
    margin-top: 50px;
    margin-bottom: 50px;
-  animation-duration: 3s;
-    animation-name: slideDown;
-  
-@keyframes slideDown{
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
- }
+   animation-duration: 3s;
+   animation-name: slideDown;
+        @keyframes slideDown{
+        from {
+            transform: translateY(-100%);
+             opacity: 0;
+             }
+             to {
+           transform: translateY(0);
+              opacity: 1;
+              }
+             }
    @media only screen and (max-width: 992px) {
         font-size: 40px;
   }
@@ -146,20 +120,23 @@ export const MainDescription = styled.div`
 `;
 
 export const Body = styled.div`
-   background-color: ${(props) => props.isClicked ? randomColor() : randomColor()} !important
+   background-color: #13110f;
     scroll-behavior: smooth;
-  
    font-family: Helvetica;
    color: white;
    scroll-behavior: smooth !important
    background-size:100% 100%;
+    overflow-x: hidden;
+
 `;
 
-export const Wrapper = styled.html`
- overflow-x: hidden;
-`;
 
-export const AboutHeader = styled.div`
+export const TopContainer = styled.div`
+    background-image: url(${sanfran});
+    background-repeat: no-repeat;
+ 
+`;
+export const GeneralHeader = styled.div`
      font-size: 50px;
       background-color: inherit;
       padding-top: 200px;
@@ -168,13 +145,11 @@ export const AboutHeader = styled.div`
        @media only screen and (max-width: 760px) {
        background-color: transparent;
        }
+       
 `;
 
-export const WhatIUse = styled(AboutHeader)`
+export const WhatIUse = styled(GeneralHeader)`
       background-color: transparent; !important
-`
-export const WorkHeader = styled(AboutHeader)`
-   padding-left: 0px;
 `;
 
 export const BigOverlay = styled.div`
@@ -190,7 +165,12 @@ export const BigOverlay = styled.div`
     \`;
 `;
 
-export const EdHeader = styled(AboutHeader)`
+export const TopOverlay = styled.div`
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+`;
+
+export const EdHeader = styled(GeneralHeader)`
     padding-top: 0px;
     text-align: center;
     padding-top: 90px;
@@ -225,16 +205,16 @@ export const SocialBar = styled.div`
     animation-duration: 4s;
     animation-name: slideover;
       @keyframes slideover {
-      from {
-        width: 0%; 
-      }
-      to {
-        width: 100%;
-      }
-     }
+         from {
+           width: 0%; 
+         }
+         to {
+           width: 100%;
+            }
+         }
     `;
 
-export const EdBody = styled(AboutMeBody)`
+export const EdBody = styled(GeneralBody)`
     padding-bottom: 0px;
     background: none;
 `;
@@ -247,7 +227,7 @@ export const CollegeIcon = styled.img`
     max-width:100%; 
     height: 300px; 
      @media only screen and (max-width: 760px) {
-     height: 200px;
+        height: 200px;
      }
 `;
 
@@ -255,10 +235,12 @@ export const CollegeIcon = styled.img`
 export const SocialIcon = styled.img`
     height: 70px;
     width: 70px;
-    padding-top: 40px;
-    margin: 20px;
+    margin-top: 40px;
     margin-bottom: 200px;
+    margin-right: 40px;
     transition: transform .5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 10px;
     &:hover {
     -webkit-transform: translateY(-25px);
     transform: translateY(-25px)  scale(1.3);
@@ -267,21 +249,45 @@ export const SocialIcon = styled.img`
              height: 40px;
              width: 40px;
              }
+`;
 
+export const ToolIcon = styled(SocialIcon)`
+    background-color: transparent;
+`;
+export const ArrowIcon = styled.img`
+    height: 300px;
+    opacity: 1;
+    animation: bounce 2s infinite;
+    @keyframes bounce {
+       0%, 20%, 50%, 80%, 100% {
+                  transform: translateY(0);
+             }
+         40% {
+               transform: translateY(-30px);
+            }
+         60% {
+    transform: translateY(-15px);
+        }
+    }
+`;
+
+export const MacScreens = styled.img`
 `;
 
 export const GithubIcon = styled.img`
     height: 60px;
     width: 60px;
-    padding-top: 40px;
-    margin: 20px;
+    margin-top: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.66);
     animation-duration: 3s;
-     transition: transform .5s;
+    transition: transform .5s;
       &:hover {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px)  scale(1.3);
-    }
-    @media only screen and (max-width: 760px) {
+             -webkit-transform: translateY(-25px);
+            transform: translateY(-25px)  scale(1.3);
+             }
+     @media only screen and (max-width: 760px) {
              height: 30px;
              width: 30px;
              }
@@ -303,14 +309,13 @@ export const Headshot = styled.img`
     animation-duration: 3s;
     animation-name: fade;
       @keyframes fade{
-  from {
+         from {
     
-    opacity: 0;
-  }
-  to {
+          opacity: 0;
+             }
+             to {
     
-    opacity: 1;
-  }
-    `;
+              opacity: 1;
+                 }
+   `;
 
-export const WorkExp = styled.div``;

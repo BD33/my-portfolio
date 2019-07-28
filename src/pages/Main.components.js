@@ -45,7 +45,7 @@ export const GeneralBody = styled.div`
     text-align: center;
     font-size: 30px;
     line-height: 2;
-      @media only screen and (max-width: 760px) {
+      @media only screen and (max-width: 1260px) {
        font-size: 20px; padding: 20px;
        background-color: transparent;
         }
@@ -61,6 +61,11 @@ export const AboutContainer = styled.div`
       transition: opacity .5s ease-in;
        transition: opacity 2s ease-out;
       }
+      @media only screen and (max-width: 1720px) {
+       
+        padding: 0px;
+        display: block;
+        }  
       @media only screen and (max-width: 760px) {
         opacity: 1;
         padding: 0px;
@@ -158,7 +163,7 @@ export const BigOverlay = styled.div`
      opacity: 0;
      transition: opacity 1s ease-in-out;
      padding: 20px;
-        @media only screen and (max-width: 760px) {
+        @media only screen and (max-width: 1260px) {
         opacity: 1;
         border-radius: 0px;
         }
@@ -191,7 +196,12 @@ export const  Education = styled.div`
        &:hover ${BigOverlay} {
       opacity: 1;
     }
-      @media only screen and (max-width: 760px) {
+      @media only screen and (max-width: 1260px) {
+      
+        padding: 0px;
+        display: block;
+        }
+         @media only screen and (max-width: 760px) {
         opacity: 1;
         padding: 0px;
         display: block;
@@ -279,9 +289,18 @@ export const ArrowIcon = styled.img`
 `;
 
 export const MacScreens = styled.img`
+ @media only screen and (max-width: 760px) {
+ height: 150px;
+ }
 `;
 export const PhoneScreens = styled.img`
     height: 600px;
+     @media only screen and (max-width: 1060px) {
+    height: 350px;
+    }
+         @media only screen and (max-width: 760px) {
+    height: 150px;
+    }
 `;
 
 export const GithubIcon = styled.img`

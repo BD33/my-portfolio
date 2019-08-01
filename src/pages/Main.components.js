@@ -295,7 +295,7 @@ export const MacScreens = styled.img`
 `;
 export const PhoneScreens = styled.img`
     height: 600px;
-     @media only screen and (max-width: 1060px) {
+     @media only screen and (max-width: 1460px) {
     height: 350px;
     }
          @media only screen and (max-width: 760px) {

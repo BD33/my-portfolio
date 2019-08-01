@@ -72,7 +72,7 @@ export default class Main extends Component {
                             <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
                     <Headshot src={headshot}/>
                     <MainHeader> Hello, I'm Bill!</MainHeader>
-                    <MainDescription>Student | FullStack Devloper | Meme enthusiast | Sports Guy </MainDescription>
+                    <MainDescription>Student | Fullstack Developer | Meme enthusiast | Sports Guy </MainDescription>
                     <SocialBar>
                         <a href='http://www.twitter.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
                             <SocialIcon src={twitter}/>

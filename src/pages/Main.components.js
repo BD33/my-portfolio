@@ -289,7 +289,16 @@ export const ArrowIcon = styled.img`
 `;
 
 export const MacScreens = styled.img`
- @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 1660px) {
+ height: 450px;
+ }
+ @media only screen and (max-width: 1460px) {
+ height: 400px;
+ }
+ @media only screen and (max-width: 1060px) {
+ height: 300px;
+ }
+  @media only screen and (max-width: 760px) {
  height: 150px;
  }
 `;

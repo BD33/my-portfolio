@@ -49,6 +49,15 @@ export const GeneralBody = styled.div`
        font-size: 20px; padding: 20px;
        background-color: transparent;
         }
+            @media only screen and (max-width: 414px) {
+       font-size: 20px; padding: 5px;
+       width: 400px;
+       background-color: transparent;
+        }
+        @media only screen and (max-width: 360px) {
+       font-size: 15px;
+       width: 350px;
+       }
     `;
 
 export const AboutContainer = styled.div`
@@ -122,6 +131,16 @@ export const MainDescription = styled.div`
        @media only screen and (max-width: 992px) {
         font-size: 25px;
   }
+  @media only screen and (max-width: 414px) {
+       font-size: 20px;
+       width: 400px;
+       background-color: transparent;
+       }
+  @media only screen and (max-width: 360px) {
+       font-size: 20px;
+       width: 350px;
+       background-color: transparent;
+       }
 `;
 
 export const Body = styled.div`

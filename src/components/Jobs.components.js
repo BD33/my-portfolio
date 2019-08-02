@@ -27,7 +27,7 @@ export const JobDesc = styled.div`
       @media only screen and (max-width: 760px) {
         font-size: 20px;
         text-align: left;
-        padding: 0px;
+        padding: 15px;
         margin-bottom: 100px; !important
      }
     `;
@@ -35,5 +35,5 @@ export const JobDesc = styled.div`
 
 export const JobContainer = styled.div`
   
-    
+  
     `;

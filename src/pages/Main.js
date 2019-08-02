@@ -1,5 +1,8 @@
 //Libraries
 import React, {Component} from 'react'; // import the script
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
+
 
 //Style Components
 import {
@@ -88,12 +91,14 @@ export default class Main extends Component {
                         </a>
                     </SocialBar>
                     <AboutContainer>
+                        <Fade bottom>
                         <GeneralHeader>ABOUT</GeneralHeader>
                         <GeneralBody>
                             I like JavaScript and everything web.
                             When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving.
                             I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way.
                             Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.
+                            <Fade left>
                             <WhatIUse>What do I use?</WhatIUse>
                             I have experience with the following tools & technologies:
                             <SocialBar>
@@ -113,23 +118,36 @@ export default class Main extends Component {
                                     <ToolIcon src={bootstrap}/>
                                 </a>
                             </SocialBar>
+                            </Fade>
                         </GeneralBody >
+                        </Fade>
                     </AboutContainer>
                         </TopOverlay>
                     </TopContainer>
                     <Education>
+                        <Fade down>
                         <BigOverlay>
+
                             <EdHeader>
                                 Education
                             </EdHeader>
+
                             <GradIcon src={grad}/>
                             <CollegeIcon src={TheOhioState}/>
+
                             <EdBody> Currently pursuing a degree in Computer Science Engineering from The Ohio State University. </EdBody>
-                        </BigOverlay>
+
+                            </BigOverlay>
+                        </Fade>
                     </Education>
                         <WorkContainer>
-                            <GeneralHeader>Work Experience</GeneralHeader>
+
+
                             <GeneralBody>
+                                <Rotate bottom left>
+                                    <GeneralHeader>Work Experience</GeneralHeader>
+                                </Rotate>
+                                <Rotate bottom right>
                                 <Jobs jobName={
                                     <div>Code Ninjas 2018 - 2019 | <i>Code Sensei</i> </div>
                                 }
@@ -144,6 +162,8 @@ export default class Main extends Component {
                                               • Developed curriculum based on Javascript and Strach based on student’s skill set.
                                           </div>
                                       }/>
+                                </Rotate>
+                                <Rotate bottom left>
                                 <Jobs jobName={
                                     <div>GiveGame 2019 | <i>Software Engineer</i> </div>
                                 }
@@ -155,19 +175,32 @@ export default class Main extends Component {
                                           </div>
                                       }
                                 />
+                                </Rotate>
                                 <div>GiveGame Portfolio</div>
                                 <ArrowIcon src={arrowDown}/>
                                 <DisplayBox>
+                                    <Fade left>
                                 <MacScreens src={macscreen}/>
+                                    </Fade>
+                                <Fade right>
                                 <PhoneScreens src={iphone3}/>
+                                </Fade>
                                  </DisplayBox>
                                 <DisplayBox>
+                                    <Fade left>
                                 <MacScreens src={macscreen2}/>
+                                    </Fade>
+                                    <Fade right>
                                 <PhoneScreens src={iphone2}/>
+                                    </Fade>
                                 </DisplayBox>
                                 <DisplayBox>
+                                    <Fade left>
                                 <MacScreens src={macscreen3}/>
+                                    </Fade>
+                                    <Fade right>
                                 <PhoneScreens src={iphone}/>
+                                    </Fade>
                                 </DisplayBox>
                             </GeneralBody >
                         </WorkContainer>

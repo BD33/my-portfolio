@@ -55,7 +55,7 @@ export const AboutContainer = styled.div`
     display: inline-block;
      padding: 100px;
      background: rgba(0, 0, 0, 0.6);
-     opacity: 0;
+     opacity: 1;
      &:hover  {
       opacity: 1;
       transition: opacity .5s ease-in;
@@ -144,7 +144,8 @@ export const TopContainer = styled.div`
 export const GeneralHeader = styled.div`
      font-size: 50px;
       background-color: inherit;
-      padding-top: 200px;
+      padding-top: 100px;
+      padding-bottom: 100px;
       font-weight: 900;
       text-align: center;
        @media only screen and (max-width: 760px) {
@@ -160,11 +161,11 @@ export const WhatIUse = styled(GeneralHeader)`
 export const BigOverlay = styled.div`
      background: rgba(0, 0, 0, 0.6);
      border-radius: 100px;
-     opacity: 0;
+     opacity: 1;
      transition: opacity 1s ease-in-out;
      padding: 20px;
         @media only screen and (max-width: 1260px) {
-        opacity: 1;
+
         border-radius: 0px;
         }
     \`;

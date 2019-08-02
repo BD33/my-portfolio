@@ -23,10 +23,8 @@ export const JobDesc = styled.div`
     line-height: 2;
     padding-bottom: 200px;
     
-   opacity: 0;
-   transition: opacity .5s ease-in-out;
+   opacity: 1;
       @media only screen and (max-width: 760px) {
-        opacity: 1;
         font-size: 20px;
         text-align: left;
         padding: 0px;
@@ -37,6 +35,5 @@ export const JobDesc = styled.div`
 
 export const JobContainer = styled.div`
   
-      &:hover ${JobDesc} {
-      opacity: 1;
+    
     `;

@@ -137,11 +137,11 @@ export default class Main extends Component {
                                          codeNinja
                                       }
                                       jobDescription={
-                                          <div>  • Responsible for teaching children ages 7-14 on the core values of Computer Science using Java Script and Strach.
+                                          <div>  • Responsible for teaching children ages 7-14 on the core values of Computer Science using Javascript and Strach.
                                               <br />
-                                              • Engaged with students and set up a good foundation for coding, math, logic, problem solving and teamwork
+                                              • Engaged with students and set up a good foundation for coding, math, logic, problem solving and teamwork.
                                               <br />
-                                              • Developed curriculum based on Java Script and Strach based on student’s skill set.
+                                              • Developed curriculum based on Javascript and Strach based on student’s skill set.
                                           </div>
                                       }/>
                                 <Jobs jobName={

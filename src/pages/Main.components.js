@@ -54,9 +54,9 @@ export const GeneralBody = styled.div`
        width: 400px;
        background-color: transparent;
         }
-        @media only screen and (max-width: 360px) {
+        @media only screen and (max-width: 375px) {
        font-size: 15px;
-       width: 350px;
+       width: 355px;
        }
     `;
 

@@ -1,10 +1,9 @@
 //Libraries
 import styled from 'styled-components'; // import the script
-
+import '../index.css';
 //Images
 import uniWall from '../assests/UniWall.jpg'
 import sanfran from '../assests/San-Francisco-4K.jpg'
-
 //xs : 320px
 //sm : 760px
 //md: 992px
@@ -146,11 +145,13 @@ export const MainDescription = styled.div`
 export const Body = styled.div`
    background-color: #13110f;
     scroll-behavior: smooth;
-   font-family: Helvetica;
    color: white;
    scroll-behavior: smooth !important
    background-size:100% 100%;
     overflow-x: hidden;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
 
 `;
 
@@ -163,7 +164,7 @@ export const TopContainer = styled.div`
 export const GeneralHeader = styled.div`
      font-size: 50px;
       background-color: inherit;
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 100px;
       font-weight: 900;
       text-align: center;

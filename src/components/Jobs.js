@@ -9,9 +9,9 @@ import { Icon, JobContainer, JobDesc} from "./Jobs.components";
 export default class Jobs extends Component {
     static propTypes = {
         /**
-         * Name of the company with job title
+         * Name of the company
          */
-        jobName : PropTypes.object.isRequired,
+        companyName : PropTypes.string.isRequired,
         /**
          * Logo of the company
          */
@@ -20,12 +20,17 @@ export default class Jobs extends Component {
          * Job Description usually passed as bullets
          */
         jobDescription : PropTypes.object.isRequired,
+        /**
+         * Job Title held at company
+         */
+        jobTitle : PropTypes.string.isRequired,
+
     }
 
     render() {
         return (
             <Fragment>
-            <JobContainer>{this.props.jobName}
+            <JobContainer> <div>{this.props.companyName} | <i>{this.props.jobTitle}</i> </div>
                 <div> <Icon src={this.props.logo}/> </div>
                 <JobDesc>
                     {this.props.jobDescription}

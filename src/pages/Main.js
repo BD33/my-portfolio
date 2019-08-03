@@ -71,140 +71,137 @@ export default class Main extends Component {
 
     render() {
         return (
-                <Body>
-                    <TopContainer>
-                        <TopOverlay>
-                            <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
-                    <Headshot src={headshot}/>
-                    <MainHeader> Hello, I'm Bill!</MainHeader>
-                    <MainDescription>{MainHeaderDesc}</MainDescription>
-                    <SocialBar>
-                        <a href='http://www.twitter.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
-                            <SocialIcon src={twitter}/>
-                        </a>
-                        <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank' rel="noopener noreferrer">
-                            <SocialIcon src={linkin}/>
-                        </a>
-                        <a href='http://www.instagram.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
-                            <SocialIcon src={instagram}/>
-                        </a>
-                        <a href='http://www.github.com/bd33' target= '_blank' rel="noopener noreferrer">
-                            <GithubIcon src={github}/>
-                        </a>
-                    </SocialBar>
-                    <AboutContainer>
-                        <Fade bottom>
-                        <GeneralHeader>ABOUT</GeneralHeader>
-                        <GeneralBody>
-                            {AboutMeDesc}
-                            <Fade left>
-                            <WhatIUse>What do I use?</WhatIUse>
-                            I have experience with the following tools & technologies:
-                            <SocialBar>
-                                <a href='https://reactjs.org/' target= '_blank'>
-                                    <ToolIcon src={reactlogo}/>
-                                </a>
-                                <a href='https://www.w3schools.com/html/' target= '_blank'>
-                                    <ToolIcon src={html}/>
-                                </a>
-                                <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target= '_blank'>
-                                    <ToolIcon src={css}/>
-                                </a>
-                                <a href='https://www.javascript.com/' target= '_blank'>
-                                    <ToolIcon src={javaslogo}/>
-                                </a>
-                                <a href='https://getbootstrap.com/' target= '_blank'>
-                                    <ToolIcon src={bootstrap}/>
-                                </a>
-                            </SocialBar>
+            <Body>
+                <TopContainer>
+                    <TopOverlay>
+                        <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
+                        <Headshot src={headshot}/>
+                        <MainHeader> Hello, I'm Bill!</MainHeader>
+                        <MainDescription>{MainHeaderDesc}</MainDescription>
+                        <SocialBar>
+                            <a href='http://www.twitter.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
+                                <SocialIcon src={twitter}/>
+                            </a>
+                            <a href='https://www.linkedin.com/in/william-deniro/' target= '_blank' rel="noopener noreferrer">
+                                <SocialIcon src={linkin}/>
+                            </a>
+                            <a href='http://www.instagram.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
+                                <SocialIcon src={instagram}/>
+                            </a>
+                            <a href='http://www.github.com/bd33' target= '_blank' rel="noopener noreferrer">
+                                <GithubIcon src={github}/>
+                            </a>
+                        </SocialBar>
+                        <AboutContainer>
+                            <Fade bottom>
+                                <GeneralHeader>ABOUT</GeneralHeader>
+                                <GeneralBody>
+                                    {AboutMeDesc}
+                                    <Fade left>
+                                        <WhatIUse>What do I use?</WhatIUse>
+                                        I have experience with the following tools & technologies:
+                                        <SocialBar>
+                                            <a href='https://reactjs.org/' target= '_blank'>
+                                                <ToolIcon src={reactlogo}/>
+                                            </a>
+                                            <a href='https://www.w3schools.com/html/' target= '_blank'>
+                                                <ToolIcon src={html}/>
+                                            </a>
+                                            <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target= '_blank'>
+                                                <ToolIcon src={css}/>
+                                            </a>
+                                            <a href='https://www.javascript.com/' target= '_blank'>
+                                                <ToolIcon src={javaslogo}/>
+                                            </a>
+                                            <a href='https://getbootstrap.com/' target= '_blank'>
+                                                <ToolIcon src={bootstrap}/>
+                                            </a>
+                                        </SocialBar>
+                                    </Fade>
+                                </GeneralBody >
                             </Fade>
-                        </GeneralBody >
-                        </Fade>
-                    </AboutContainer>
-                        </TopOverlay>
-                    </TopContainer>
-                    <Education>
-
-                        <BigOverlay>
-                            <Fade down>
+                        </AboutContainer>
+                    </TopOverlay>
+                </TopContainer>
+                <Education>
+                    <BigOverlay>
+                        <Fade down>
                             <EdHeader>
                                 Education
                             </EdHeader>
-                            </Fade>
-                            <Fade left>
+                        </Fade>
+                        <Fade left>
                             <GradIcon src={grad}/>
+                        </Fade>
+                        <Fade right>
+                            <CollegeIcon src={TheOhioState}/>
+                        </Fade>
+                        <Fade up>
+                            <EdBody>{EducationDesc}</EdBody>
+                        </Fade>
+                    </BigOverlay>
+                </Education>
+                <WorkContainer>
+                    <GeneralBody>
+                        <Rotate bottom left>
+                            <GeneralHeader>Work Experience</GeneralHeader>
+                        </Rotate>
+                        <Rotate bottom right>
+                            <Jobs jobTitle={'Code Sensei'}
+                                  companyName={'CodeNinjas'}
+                                  logo={codeNinja}
+                                  jobDescription={
+                                      <div>  • Responsible for teaching children ages 7-14 on the core values of Computer Science using Javascript and Strach.
+                                          <br />
+                                          • Engaged with students and set up a good foundation for coding, math, logic, problem solving and teamwork.
+                                          <br />
+                                          • Developed curriculum based on Javascript and Strach based on student’s skill set.
+                                      </div>
+                                  }/>
+                        </Rotate>
+                        <Rotate bottom left>
+                            <Jobs  jobTitle={'Software Engineer'}
+                                   companyName={'GiveGame'}
+                                  logo={givegame}
+                                  jobDescription={
+                                      <div>• Responsible for contributing to brainstorming, designing, producing and implementing new components for an online mobile web app built in React.
+                                          <br />
+                                          • Worked directly with marketing team to come up with and build a website that was both efficient for getting new users and aesthetically pleasing for the user to interact with.
+                                      </div>
+                                  }
+                            />
+                        </Rotate>
+                        <div>GiveGame Portfolio</div>
+                        <ArrowIcon src={arrowDown}/>
+                        <DisplayBox>
+                            <Fade left>
+                                <MacScreens src={macscreen}/>
                             </Fade>
                             <Fade right>
-                            <CollegeIcon src={TheOhioState}/>
-                            </Fade>
-                            <Fade up>
-                            <EdBody>{EducationDesc}</EdBody>
-                            </Fade>
-                            </BigOverlay>
-                    </Education>
-                        <WorkContainer>
-
-
-                            <GeneralBody>
-                                <Rotate bottom left>
-                                    <GeneralHeader>Work Experience</GeneralHeader>
-                                </Rotate>
-                                <Rotate bottom right>
-                                <Jobs jobName={ <div>Code Ninjas 2018 - 2019 | <i>Code Sensei</i> </div>}
-                                      logo={
-                                         codeNinja
-                                      }
-                                      jobDescription={
-                                          <div>  • Responsible for teaching children ages 7-14 on the core values of Computer Science using Javascript and Strach.
-                                              <br />
-                                              • Engaged with students and set up a good foundation for coding, math, logic, problem solving and teamwork.
-                                              <br />
-                                              • Developed curriculum based on Javascript and Strach based on student’s skill set.
-                                          </div>
-                                      }/>
-                                </Rotate>
-                                <Rotate bottom left>
-                                <Jobs jobName={
-                                    <div>GiveGame 2019 | <i>Software Engineer</i> </div>
-                                }
-                                      logo={givegame}
-                                      jobDescription={
-                                          <div>• Responsible for contributing to brainstorming, designing, producing and implementing new components for an online mobile web app built in React.
-                                              <br />
-                                              • Worked directly with marketing team to come up with and build a website that was both efficient for getting new users and aesthetically pleasing for the user to interact with.
-                                          </div>
-                                      }
-                                />
-                                </Rotate>
-                                <div>GiveGame Portfolio</div>
-                                <ArrowIcon src={arrowDown}/>
-                                <DisplayBox>
-                                    <Fade left>
-                                <MacScreens src={macscreen}/>
-                                    </Fade>
-                                <Fade right>
                                 <PhoneScreens src={iphone3}/>
-                                </Fade>
-                                 </DisplayBox>
-                                <DisplayBox>
-                                    <Fade left>
+                            </Fade>
+                        </DisplayBox>
+                        <DisplayBox>
+                            <Fade left>
                                 <MacScreens src={macscreen2}/>
-                                    </Fade>
-                                    <Fade right>
+                            </Fade>
+                            <Fade right>
                                 <PhoneScreens src={iphone2}/>
-                                    </Fade>
-                                </DisplayBox>
-                                <DisplayBox>
-                                    <Fade left>
+                            </Fade>
+                        </DisplayBox>
+                        <DisplayBox>
+                            <Fade left>
                                 <MacScreens src={macscreen3}/>
-                                    </Fade>
-                                    <Fade right>
+                            </Fade>
+                            <Fade right>
                                 <PhoneScreens src={iphone}/>
-                                    </Fade>
-                                </DisplayBox>
-                            </GeneralBody >
-                        </WorkContainer>
-                </Body>
+                            </Fade>
+                        </DisplayBox>
+                    </GeneralBody >
+                </WorkContainer>
+            </Body>
+
+
         );
     }
 }

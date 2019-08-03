@@ -3,7 +3,6 @@ import React, {Component} from 'react'; // import the script
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 
-
 //Style Components
 import {
     MainHeader,
@@ -57,12 +56,15 @@ import iphone from '../assests/GiveGameIphone.png'
 import iphone2 from '../assests/GiveGameIphone2.png'
 import iphone3 from '../assests/GiveGameIphone3.png'
 
-
 //Components
 import Jobs from '../components/Jobs'
 
-export default class Main extends Component {
+//Constants
+const AboutMeDesc = 'I like JavaScript and everything web. When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving. I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way. Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.';
+const EducationDesc = 'Currently pursuing a degree in Computer Science Engineering from The Ohio State University.';
+const MainHeaderDesc =  'Student | Fullstack Developer | Meme enthusiast | Sports Guy ';
 
+export default class Main extends Component {
     handleScroll = () =>{
         window.scroll({ top: 1050, left: 0, behavior: 'smooth' });
     }
@@ -75,7 +77,7 @@ export default class Main extends Component {
                             <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
                     <Headshot src={headshot}/>
                     <MainHeader> Hello, I'm Bill!</MainHeader>
-                    <MainDescription>Student | Fullstack Developer | Meme enthusiast | Sports Guy </MainDescription>
+                    <MainDescription>{MainHeaderDesc}</MainDescription>
                     <SocialBar>
                         <a href='http://www.twitter.com/billydeniro3' target= '_blank' rel="noopener noreferrer">
                             <SocialIcon src={twitter}/>
@@ -94,10 +96,7 @@ export default class Main extends Component {
                         <Fade bottom>
                         <GeneralHeader>ABOUT</GeneralHeader>
                         <GeneralBody>
-                            I like JavaScript and everything web.
-                            When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving.
-                            I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way.
-                            Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.
+                            {AboutMeDesc}
                             <Fade left>
                             <WhatIUse>What do I use?</WhatIUse>
                             I have experience with the following tools & technologies:
@@ -139,7 +138,7 @@ export default class Main extends Component {
                             <CollegeIcon src={TheOhioState}/>
                             </Fade>
                             <Fade up>
-                            <EdBody> Currently pursuing a degree in Computer Science Engineering from The Ohio State University. </EdBody>
+                            <EdBody>{EducationDesc}</EdBody>
                             </Fade>
                             </BigOverlay>
                     </Education>
@@ -151,9 +150,7 @@ export default class Main extends Component {
                                     <GeneralHeader>Work Experience</GeneralHeader>
                                 </Rotate>
                                 <Rotate bottom right>
-                                <Jobs jobName={
-                                    <div>Code Ninjas 2018 - 2019 | <i>Code Sensei</i> </div>
-                                }
+                                <Jobs jobName={ <div>Code Ninjas 2018 - 2019 | <i>Code Sensei</i> </div>}
                                       logo={
                                          codeNinja
                                       }

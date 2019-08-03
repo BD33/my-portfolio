@@ -125,20 +125,23 @@ export default class Main extends Component {
                         </TopOverlay>
                     </TopContainer>
                     <Education>
-                        <Fade down>
-                        <BigOverlay>
 
+                        <BigOverlay>
+                            <Fade down>
                             <EdHeader>
                                 Education
                             </EdHeader>
-
+                            </Fade>
+                            <Fade left>
                             <GradIcon src={grad}/>
+                            </Fade>
+                            <Fade right>
                             <CollegeIcon src={TheOhioState}/>
-
+                            </Fade>
+                            <Fade up>
                             <EdBody> Currently pursuing a degree in Computer Science Engineering from The Ohio State University. </EdBody>
-
+                            </Fade>
                             </BigOverlay>
-                        </Fade>
                     </Education>
                         <WorkContainer>
 

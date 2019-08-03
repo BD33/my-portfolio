@@ -34,7 +34,7 @@ export const AboutMe = styled.div`
            transform: translateY(0%);
          opacity: 1;
         }
-         }
+       }
 `;
 
 export const GeneralBody = styled.div`
@@ -152,14 +152,11 @@ export const Body = styled.div`
     font-family: myriad-pro, sans-serif;
     font-weight: 200;
     font-style: normal;
-
 `;
-
 
 export const TopContainer = styled.div`
     background-image: url(${sanfran});
     background-repeat: no-repeat;
- 
 `;
 export const GeneralHeader = styled.div`
      font-size: 50px;
@@ -171,7 +168,6 @@ export const GeneralHeader = styled.div`
        @media only screen and (max-width: 760px) {
        background-color: transparent;
        }
-       
 `;
 
 export const WhatIUse = styled(GeneralHeader)`
@@ -188,6 +184,11 @@ export const BigOverlay = styled.div`
 
         border-radius: 0px;
         }
+          @media only screen and (max-width: 360px) {
+
+        padding: 5px;
+        }
+        
     \`;
 `;
 
@@ -223,7 +224,6 @@ export const  Education = styled.div`
         display: block;
         }
          @media only screen and (max-width: 760px) {
-        opacity: 1;
         padding: 0px;
         display: block;
         }
@@ -255,6 +255,10 @@ export const DisplayBox = styled.div`
 export const EdBody = styled(GeneralBody)`
     padding-bottom: 0px;
     background: none;
+    margin-bottom: 90px;
+   @media only screen and (max-width: 360px) {
+    width: 320px;
+    }
 `;
 
 export const CollegeIcon = styled.img`
@@ -310,18 +314,18 @@ export const ArrowIcon = styled.img`
 `;
 
 export const MacScreens = styled.img`
-    @media only screen and (max-width: 1660px) {
- height: 450px;
- }
- @media only screen and (max-width: 1460px) {
- height: 400px;
- }
- @media only screen and (max-width: 1060px) {
- height: 300px;
- }
-  @media only screen and (max-width: 760px) {
- height: 150px;
- }
+         @media only screen and (max-width: 1660px) {
+         height: 450px;
+         }
+         @media only screen and (max-width: 1460px) {
+         height: 400px;
+         }
+         @media only screen and (max-width: 1060px) {
+         height: 300px;
+         }
+          @media only screen and (max-width: 760px) {
+         height: 150px;
+         }
 `;
 export const PhoneScreens = styled.img`
     height: 600px;
@@ -373,7 +377,6 @@ export const Headshot = styled.img`
           opacity: 0;
              }
              to {
-    
               opacity: 1;
                  }
    `;

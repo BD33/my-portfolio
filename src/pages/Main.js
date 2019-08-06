@@ -1,7 +1,9 @@
 //Libraries
-import React, {Component} from 'react'; // import the script
+import React, {Component, Fragment} from 'react'; // import the script
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
+import { Helmet } from 'react-helmet';
+
 
 //Style Components
 import {
@@ -72,6 +74,9 @@ export default class Main extends Component {
     render() {
         return (
             <Body>
+             <Helmet>
+                 <title>Billy DeNiro</title>
+             </Helmet>
                 <TopContainer>
                     <TopOverlay>
                         <AboutMe onClick={this.handleScroll}>About Me</AboutMe>
@@ -200,8 +205,6 @@ export default class Main extends Component {
                     </GeneralBody >
                 </WorkContainer>
             </Body>
-
-
         );
     }
 }

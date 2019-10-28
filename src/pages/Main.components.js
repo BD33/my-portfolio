@@ -174,6 +174,18 @@ export const WhatIUse = styled(GeneralHeader)`
       background-color: transparent; !important
 `;
 
+export const Lang = styled.div `
+font-size: 20px;
+background-color: inherit;
+padding-top: 50px;
+padding-bottom: 100px;
+font-weight: 900;
+text-align: center;
+ @media only screen and (max-width: 760px) {
+ background-color: transparent;
+ }
+`;
+
 export const BigOverlay = styled.div`
      background: rgba(0, 0, 0, 0.6);
      border-radius: 100px;
@@ -204,6 +216,12 @@ export const EdHeader = styled(GeneralHeader)`
     margin-bottom: 0px;
     padding-left: 0px;
     background: none;    
+`;
+
+export const EdsubHead = styled(EdHeader)`
+        padding-top:10px;
+        padding-bottom: 10px;
+
 `;
 
 export const  Education = styled.div`
@@ -255,7 +273,7 @@ export const DisplayBox = styled.div`
 export const EdBody = styled(GeneralBody)`
     padding-bottom: 0px;
     background: none;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
    @media only screen and (max-width: 360px) {
     width: 320px;
     }

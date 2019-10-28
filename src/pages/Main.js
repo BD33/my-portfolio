@@ -33,6 +33,8 @@ import {
     ArrowIcon,
     PhoneScreens,
     DisplayBox,
+    Lang,
+    EdsubHead
 } from './Main.components.js'
 
 //Images
@@ -62,9 +64,11 @@ import iphone3 from '../assests/GiveGameIphone3.png'
 import Jobs from '../components/Jobs'
 
 //Constants
-const AboutMeDesc = 'I like JavaScript and everything web. When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving. I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way. Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.';
+const AboutMeDesc = 'I am a software engineer based in Columbus, OH specializing in building and designing) exceptional, high-quality websites and native applications. I like JavaScript and everything web. When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving. I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way. Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.';
 const EducationDesc = 'Currently pursuing a degree in Computer Science Engineering from The Ohio State University.';
-const MainHeaderDesc =  'Student | Fullstack Developer | Meme enthusiast | Sports Guy ';
+const MainHeaderDesc =  'Student | Software Engineer | Sports Guy ';
+const Languages = 'Java,  JavasScript , C, Python, Ruby , HTML/CSS, X86-64 assembly'
+const CourseWork = 'Discrete Structures,  Data Structures and Algorithms , Software Development and Design , Introduction to Low-Level Programming and Computer Organization, Probability and Statistics for Engineers, Database Systems '
 
 export default class Main extends Component {
     handleScroll = () =>{
@@ -104,6 +108,8 @@ export default class Main extends Component {
                                     {AboutMeDesc}
                                     <Fade left>
                                         <WhatIUse>What do I use?</WhatIUse>
+                                        I have experience with the following languages:
+                                        <Lang>{Languages}</Lang>
                                         I have experience with the following tools & technologies:
                                         <SocialBar>
                                             <a href='https://reactjs.org/' target= '_blank'>
@@ -143,6 +149,8 @@ export default class Main extends Component {
                         </Fade>
                         <Fade up>
                             <EdBody>{EducationDesc}</EdBody>
+                            <EdsubHead>Relative CourseWork:</EdsubHead>
+                            <EdBody>{CourseWork}</EdBody>
                         </Fade>
                     </BigOverlay>
                 </Education>

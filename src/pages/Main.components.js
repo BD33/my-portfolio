@@ -261,6 +261,13 @@ export const SocialBar = styled.div`
            width: 100%;
             }
          }
+         @media only screen and (max-width: 360px) {
+           width:100%
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+         
+          }
     `;
 
 export const DisplayBox = styled.div`
@@ -268,6 +275,19 @@ export const DisplayBox = styled.div`
     justify-content: center;
     align-items: center;
     padding-bottom: 300px;
+`;
+
+
+export const DublyDisplayBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+    @media only screen and (max-width: 760px) {
+      margin-left: auto;
+  margin-right: auto;
+  display: block;
+      }
 `;
 
 export const EdBody = styled(GeneralBody)`
@@ -313,11 +333,15 @@ export const SocialIcon = styled.img`
 
 export const ToolIcon = styled(SocialIcon)`
     background-color: transparent;
+    @media only screen and (max-width: 400px) {
+      height: 20px;
+      width: 20px;
+      }
 `;
 export const ArrowIcon = styled.img`
     height: 300px;
     opacity: 1;
-    animation: bounce 2s infinite;
+    animation: bounce 2s infinite;dub
     @keyframes bounce {
        0%, 20%, 50%, 80%, 100% {
                   transform: translateY(0);
@@ -328,12 +352,16 @@ export const ArrowIcon = styled.img`
          60% {
     transform: translateY(-15px);
         }
-    }
+    
+  
+    @media only screen and (max-width: 760px) {
+      height: 150px;
+      }
 `;
 
 export const MacScreens = styled.img`
          @media only screen and (max-width: 1660px) {
-         height: 450px;
+         height: 200px;
          }
          @media only screen and (max-width: 1460px) {
          height: 400px;
@@ -352,6 +380,16 @@ export const PhoneScreens = styled.img`
     }
          @media only screen and (max-width: 760px) {
     height: 150px;
+    }
+`;
+
+export const DublyScreens = styled.img`
+    height: 800px;
+     @media only screen and (max-width: 1460px) {
+    height: 600px;
+    }
+         @media only screen and (max-width: 760px) {
+    height: 350px;
     }
 `;
 

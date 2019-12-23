@@ -34,7 +34,9 @@ import {
     PhoneScreens,
     DisplayBox,
     Lang,
-    EdsubHead
+    EdsubHead,
+    DublyScreens,
+    DublyDisplayBox
 } from './Main.components.js'
 
 //Images
@@ -59,16 +61,21 @@ import arrowDown from '../assests/white-down-arrow-png-2.png'
 import iphone from '../assests/GiveGameIphone.png'
 import iphone2 from '../assests/GiveGameIphone2.png'
 import iphone3 from '../assests/GiveGameIphone3.png'
+import iphone4 from '../assests/MainPageIphone.png'
+import iphone5 from '../assests/LandingScreenIphone.png'
+import dublyLogo from '../assests/DublyLogo.png'
+
+
 
 //Components
 import Jobs from '../components/Jobs'
 
 //Constants
-const AboutMeDesc = 'I am a software engineer based in Columbus, OH specializing in building and designing) exceptional, high-quality websites and native applications. I like JavaScript and everything web. When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving. I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way. Node.js, Ruby on Rails, Java, Python are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.';
+const AboutMeDesc = 'I am a software engineer based in Columbus, OH specializing in building and designing) exceptional, high-quality software, websites and native applications. When my dev senses kick-in I build presumably awesome stuff. I stay close to the community and try to keep tabs with the pace at which the web is evolving. I built this site from scratch. By scratch, I mean absolutely from scratch without any UI framework (except React though) and had so much fun along the way. Node.js, Ruby on Rails, Java, Python, Swift, and C are the main tricks up my sleeve. I am also obsessed with making the web look pretty with CSS.';
 const EducationDesc = 'Currently pursuing a degree in Computer Science Engineering from The Ohio State University.';
 const MainHeaderDesc =  'Student | Software Engineer | Sports Guy ';
-const Languages = 'Java,  JavasScript , C, Python, Ruby , HTML/CSS, X86-64 assembly'
-const CourseWork = 'Discrete Structures,  Data Structures and Algorithms , Software Development and Design , Introduction to Low-Level Programming and Computer Organization, Probability and Statistics for Engineers, Database Systems '
+const Languages = 'Java, Swift, JavasScript , C, Python, Ruby , HTML/CSS, X86-64 assembly'
+const CourseWork = 'Discrete Structures,  Data Structures and Algorithms , Software Development and Design , Introduction to Low-Level Programming and Computer Organization, Probability and Statistics for Engineers, Database Systems, Higher Foundations of Mathematics, Intro to Artifical Intelligence, Web App Development'
 
 export default class Main extends Component {
     handleScroll = () =>{
@@ -184,6 +191,26 @@ export default class Main extends Component {
                                   }
                             />
                         </Rotate>
+                        <MacScreens src={dublyLogo}/>
+
+
+                            <div>
+                        <ArrowIcon src={arrowDown}/>
+
+                        <EdBody>Dubly is an iOS app to help people strategically place sports bets using sports analytics and the Martingale Betting Algorithm, which allows users to set bankroll, get a recommended starting bet and gain a net profit over time. Written in Swift, designed in Xcode and backend implemented with Firebase.</EdBody>
+
+                        <DublyDisplayBox>
+                            <Fade right>
+                                <DublyScreens src={iphone4}/>
+                            </Fade>
+                            <Fade right>
+                            <DublyScreens src={iphone5}/>
+                            </Fade>
+                        </DublyDisplayBox>
+                </div>
+
+
+
                         <div>GiveGame Portfolio</div>
                         <ArrowIcon src={arrowDown}/>
                         <DisplayBox>

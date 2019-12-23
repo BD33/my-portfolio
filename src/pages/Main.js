@@ -191,14 +191,19 @@ export default class Main extends Component {
                                   }
                             />
                         </Rotate>
-                        <MacScreens src={dublyLogo}/>
+                        <Fade up>        
+                         <EdsubHead>Professional Portfolio</EdsubHead>
+                                  
+                        
 
-
-                            <div>
+                            
                         <ArrowIcon src={arrowDown}/>
-
+                                  <MacScreens src={dublyLogo}/>
+                        
+                        
                         <EdBody>Dubly is an iOS app to help people strategically place sports bets using sports analytics and the Martingale Betting Algorithm, which allows users to set bankroll, get a recommended starting bet and gain a net profit over time. Written in Swift, designed in Xcode and backend implemented with Firebase.</EdBody>
 
+                        </Fade> 
                         <DublyDisplayBox>
                             <Fade right>
                                 <DublyScreens src={iphone4}/>
@@ -207,11 +212,11 @@ export default class Main extends Component {
                             <DublyScreens src={iphone5}/>
                             </Fade>
                         </DublyDisplayBox>
-                </div>
+              
+          
 
 
-
-                        <div>GiveGame Portfolio</div>
+                        <div>GiveGame</div>
                         <ArrowIcon src={arrowDown}/>
                         <DisplayBox>
                             <Fade left>
